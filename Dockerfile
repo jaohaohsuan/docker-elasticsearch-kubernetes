@@ -1,4 +1,4 @@
-FROM quay.io/jaohaohsuan/docker-elasticsearch
+FROM quay.io/jaohaohsuan/docker-elasticsearch:2.1.0
 
 MAINTAINER pjpires@gmail.com
 
