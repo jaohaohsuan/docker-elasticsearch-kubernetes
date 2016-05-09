@@ -16,6 +16,9 @@ export HTTP_CORS_ENABLE=${HTTP_CORS_ENABLE:-true}
 export NETWORK_HOST=${NETWORK_HOST:-_site_}
 export MULTICAST=${MULTICAST:-true}
 
+# sugguest values: whitespace, ik_smart, ik_max_word
+export STT_TOKENIZER=${STT_TOKENIZER:-whitespace}
+
 # Kubernetes stuff
 export NAMESPACE=${NAMESPACE:-default}
 export DISCOVERY_SERVICE=${DISCOVERY_SERVICE:-elasticsearch-discovery}

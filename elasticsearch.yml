@@ -28,3 +28,16 @@ cloud:
 discovery:
     type: kubernetes
     zen.ping.multicast.enabled: false
+
+index:
+  analysis:
+    analyzer:
+      stt_analyzer:
+        type: custom
+        tokenizer: ${STT_TOKENIZER}
+        char_filter: ['role_normalizer']
+    char_filter:
+      role_normalizer:
+        type: pattern_replace
+        pattern: '(agent|customer)(\d+-\d+)\b'
+        replacement: '$1'
