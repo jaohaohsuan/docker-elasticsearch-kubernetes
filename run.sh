@@ -4,7 +4,7 @@
 addgroup sudo
 adduser -D -g '' elasticsearch
 adduser elasticsearch sudo
-chown -R elasticsearch /elasticsearch /data
+chown -R elasticsearch /elasticsearch /data /snapshot
 echo '%sudo ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
 
 # set environment
