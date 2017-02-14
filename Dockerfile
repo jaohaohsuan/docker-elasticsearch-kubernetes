@@ -13,5 +13,6 @@ RUN /elasticsearch/bin/plugin install delete-by-query
 # Override elasticsearch.yml config, otherwise plug-in install will fail
 ADD elasticsearch.yml /elasticsearch/config/elasticsearch.yml
 
+VOLUME ["/snapshot/backups"]
 # Copy run script
 COPY run.sh /
